@@ -1,4 +1,4 @@
-![imagen](https://github.com/marinagoju/POC_Project/blob/main/portada.jpg)
+![imagen](https://github.com/marinagoju/POC_Project/blob/main/img/portada.jpg)
 # <div align="center">**PROYECTO POC**</div>
 
 
