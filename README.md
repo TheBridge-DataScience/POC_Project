@@ -1,7 +1,6 @@
 ![imagen](https://github.com/marinagoju/POC_Project/blob/main/portada.jpg)
 # <div align="center">**PROYECTO POC**</div>
 
-<br></br> 
 
 1. [Metodología de trabajo en GIT](#id1)
 
