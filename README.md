@@ -3,14 +3,17 @@
 
 
 1. [Metodología de trabajo en GIT](#id1)
-
+2. [Pasos para empezar a trabajr](#id2)
 5. [Librerías y recursos](#id5)<br></br>
 
 
 <div id='id1'/>
-<h2> 🔎 1. Metodología de trabajo en GIT</h2>
+<h2>1. Metodología de trabajo en GIT</h2>
+El flujo de trabajo del proyecto se muestra en la siguiente presentación: https://www.canva.com/design/DAFhYwCbAUc/zCyCOnDnE4bRcMsFSLssvA/view?utm_content=DAFhYwCbAUc&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink<br></br>
 
-Cada integrante del proyecto deberá trabajar en su rama local y tratar de no alterar en la medida de lo posible la rama principal.
+<div id='id2'/>
+<h2> 2. Pasos para empezar a trabajr</h2>
+Cada integrante del proyecto deberá trabajar en su rama local y tratar de no alterar en la medida de lo posible la rama principal del repositorio de su manager.
 A continuación los comandos de GIT más importantes para trabajar con tu rama local:
 
 - **git branch** : Muestra las ramas existentes.
