@@ -9,8 +9,8 @@ A continuación se muestran algunas recomendaciones a seguir para trabajar en eq
 
 <div id='id1'/>
 <h2>1. Metodología de trabajo en GIT</h2>
-Cada integrante del proyecto deberá trabajar en su rama local creada a partir de la rama feature de su equipo correspondiente.<br></br>
-Es importante no alterar en la medida de lo posible las ramas principales, por ello solo los managers de cada equipo tienen permiso para aprovar y revisar los pull requests.<br></br>
+Cada integrante del proyecto deberá trabajar en su propia rama creada a partir de la rama feature de su equipo correspondiente.<br></br>
+Es importante no alterar en la medida de lo posible las ramas principales. Solo los managers de cada equipo tienen permiso para aprovar y revisar los pull requests.<br></br>
 El arquitectura del proyecto se muestra de manera esquemática en la siguiente <a href="https://www.canva.com/design/DAFhYwCbAUc/zCyCOnDnE4bRcMsFSLssvA/view?utm_content=DAFhYwCbAUc&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink">presentación.</a>
 
 <div id='id2'/>
