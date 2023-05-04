@@ -3,7 +3,9 @@ import numpy as np
 from skimage.io import imread 
 from keras.layers import Conv2D, MaxPooling2D, Dropout, Flatten, Dense
 import cv2 
-from PIL import Image
+from PIL import Image 
+import io
+from io import BytesIO
 
 
 from keras.models import Sequential
@@ -27,12 +29,15 @@ def home():
     
     #TODO hay problemas para leer bmp, quizás hay que convertir a jpg con PIL
     try:
+        
+       
         image = request.files['imagen']    
         app.logger.debug("error",image)
         testing_image = np.array([cv2.resize(imread(image),(IMAGE_WIDTH,IMAGE_HEIGHT))/255.0])
         
         pred = model.predict(testing_image)
         return render_template('after.html', data=pred)
+       
     
     except Exception as e:
         # Ocurrió un error desconocido
