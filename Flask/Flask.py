@@ -38,7 +38,7 @@ def home():
     
     except Exception as e:
         # Ocurrió un error desconocido
-         return render_template('error.html', data={e})
+         return render_template('home.html', data={e})         
                    
 if __name__ == "__main__":
     

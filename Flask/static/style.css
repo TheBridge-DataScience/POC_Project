@@ -83,3 +83,15 @@ p{
     font-family: system-ui;
     font-style: italic;
 }
+
+.error{
+    font-size: x-large;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: black;
+    border: 1px solid red;
+    padding: 30px;
+    border-radius: 25px;
+    width: 30%;
+}
