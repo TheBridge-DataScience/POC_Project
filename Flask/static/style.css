@@ -1,0 +1,97 @@
+body{
+    background: linear-gradient(to bottom right, #FFA7A7, #E0C3FC);
+
+}
+
+.contenedor-app{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#titulo{
+    font-size: 20px;
+    padding-top: 30px;
+    font-family: 'Open Sans', sans-serif;
+    color: #666666;
+
+}
+.formulario{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+#titulo-ingreso{
+    font-size: 16px;
+    padding-top: 30px;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+}
+
+
+
+
+#input-imagen{
+    display: flex;
+    padding:30px;
+}
+
+#input-predict{
+    padding: 20px;
+    font-size:15px;
+    font-family:Arial;
+    width:140px;
+    height:50px;
+    border-width:1px;
+    line-height: 10px;
+    color:#fff;
+    border-color:#599bb3;
+    font-weight:bold;
+    border-top-left-radius:8px;
+    border-top-right-radius:8px;
+    border-bottom-left-radius:8px;
+    border-bottom-right-radius:8px;
+    box-shadow: 0px 10px 14px -7px #276873;
+    text-shadow: 0px 1px 0px #3d768a;
+    background:linear-gradient(#599bb3, #408c99);
+
+    
+
+}
+
+#input-predict:hover{
+   
+    background:#306c7d;
+}    
+
+
+
+.imagen{
+    width: 600;
+    height: 400px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+p{
+    font-size: 16px;
+    padding: 5px 60px;
+    font-family: system-ui;
+    font-style: italic;
+}
+
+.error{
+    font-size: x-large;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: black;
+    border: 1px solid red;
+    padding: 30px;
+    border-radius: 25px;
+    width: 30%;
+}
