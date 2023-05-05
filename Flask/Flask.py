@@ -3,10 +3,7 @@ import numpy as np
 from skimage.io import imread 
 from keras.layers import Conv2D, MaxPooling2D, Dropout, Flatten, Dense
 import cv2 
-from PIL import Image 
-import io
-from io import BytesIO
-
+from werkzeug.utils import secure_filename
 
 from keras.models import Sequential
 from tensorflow import keras
@@ -36,7 +33,7 @@ def home():
         testing_image = np.array([cv2.resize(imread(image),(IMAGE_WIDTH,IMAGE_HEIGHT))/255.0])
         
         pred = model.predict(testing_image)
-        return render_template('after.html', data=pred)
+        return render_template('after.html', data=pred, imagen=secure_filename(image.filename))
        
     
     except Exception as e:
