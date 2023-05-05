@@ -27,3 +27,5 @@ El arquitectura del proyecto se muestra de manera esquemática en la siguiente <
 
 - GIT
 - Ánimo y paciencia
+<h2>4. Carga de imàgenes de cèlulas y Predicciòn</h2>
+La imàgenes deben estar en formato JPG para su correcta lectura.
