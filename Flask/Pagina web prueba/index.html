@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Medical Institute</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <img src="imagen.png" alt="Logo">
+      <h1>Oncología</h1>
+    </header>
+    <main>
+		<section id="conversation">
+			<div class="dialog">
+			  <div class="bubble doctor">
+				<div class="profile">
+				  <img src="doctor.jpg" alt="Doctor">
+				</div>
+				<p>Buenos días, <br><br>
+				¿Has podido recoger las imágenes de los pacientes? <br>
+				Querría evaluarlas en el sistema nuevo que nos han implantado.</p>
+			  </div>
+			  <div class="bubble nurse">
+				<p>Sí, claro. <br>
+				Las he dejado en tu mesa para que las puedas revisar y ver qué orden de prioridad le damos a los pacientes.</p>
+				<div class="profile">
+				  <img src="nurse.jpg" alt="Nurse">
+				</div>
+			  </div>
+			</div>
+		  </section>
+		<section id="image-upload">
+			<h2>Herramienta predictiva</h2>
+			<form>
+			  <label for="image"><br>Suba la imagen a evaluar:<br><br></label>
+			  <input type="file" id="image" name="image">
+			  <button type="button" onclick="predictResult()">Predecir Resultado</button>
+			</form>
+		</section>
+    </main>
+  </body>
+</html>
