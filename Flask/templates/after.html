@@ -6,18 +6,14 @@
 
     <h1>  PREDICTION :  </h1>
   
-    {%if data[0][0] <= 0.5%}
-    <h1>Celula-Normal</h1>  
-    <img src='static\normal.jpg'>  
-
+    {%if data[0][0] > 0.1%}
+    <h1>Celula-Atipica</h1>  
     {%else%}
-    <h1>Celula-Atipica{{data}}</h1>
-    <img src='static\atipica.bmp'>
-    
-    {%endif%}
-
-        <br><br>
-    <a href='/'>go back to home page</a>
+    <h1>Celula-Normal</h1>
+    {%endif%}    
+    <img src="static/{{imagen}}">
+        <br/><br/>
+    <a href='/'>Hacer otra predicción</a>
 
     </center>
 
