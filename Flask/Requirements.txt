@@ -1,0 +1,9 @@
+Flask==2.2.3
+numpy==1.21.6
+keras==2.11.0
+imageio==2.25.1
+scikit-image==0.19.3
+opencv-python==4.7.0.72
+Werkzeug==2.3.3
+os-sys==2.1.4
+tensorflow==2.11.0

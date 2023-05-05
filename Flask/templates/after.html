@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>CERVICAL CANCER DETECTION </title>
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    </head>
+<body bgcolor=#a3cfb4>
+
+    <center>
+
+    <h1>  PREDICTION :  </h1>
+    <center><p>{{data[0][0]}}</p></center>
+    {%if data[0][0] > 0.5%}
+      <h1>Celula-Atipica</h1>  
+    {%else%}
+      <h1>Celula-Normal</h1>
+    {%endif%}    
+    <img src="static/{{imagen}}">
+        <br/><br/>
+    <a href='/'>Hacer otra predicción</a>
+
+
+    </center>
+
+</body>
+
+</html>
