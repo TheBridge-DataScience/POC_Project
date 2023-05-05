@@ -4,14 +4,14 @@
 
     <center>
 
-        <h1>  PREDICTION :  </h1>
-    
-    {%if data == 0%}
+    <h1>  PREDICTION :  </h1>
+  
+    {%if data[0][0] > 0.4%}
     <h1>Celula-Normal</h1>  
     <img src='static\normal.jpg'>  
 
     {%else%}
-    <h1>Celula-Atipica</h1>
+    <h1>Celula-Atipica{{data}}</h1>
     <img src='static\atipica.bmp'>
     
     {%endif%}

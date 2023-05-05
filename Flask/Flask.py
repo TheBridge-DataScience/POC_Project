@@ -3,10 +3,14 @@ import numpy as np
 from skimage.io import imread 
 from keras.layers import Conv2D, MaxPooling2D, Dropout, Flatten, Dense
 import cv2 
-import tensorflow as tf
+from PIL import Image 
+import io
+from io import BytesIO
+
+
 from keras.models import Sequential
 from tensorflow import keras
-from skimage.io import imread
+
 model = keras.models.load_model('Base_model.h5')
 
 app = Flask(__name__)
@@ -22,10 +26,22 @@ def man():
 def home():
     IMAGE_HEIGHT = 125
     IMAGE_WIDTH = 125
-    testing_image = np.array([cv2.resize(imread('.\static\prueba.bmp'),(IMAGE_WIDTH,IMAGE_HEIGHT))/255.0])
     
-    pred = model.predict(testing_image)
-    return render_template('after.html', data=pred)
+    #TODO hay problemas para leer bmp, quizás hay que convertir a jpg con PIL
+    try:
+        
+       
+        image = request.files['imagen']    
+        app.logger.debug("error",image)
+        testing_image = np.array([cv2.resize(imread(image),(IMAGE_WIDTH,IMAGE_HEIGHT))/255.0])
+        
+        pred = model.predict(testing_image)
+        return render_template('after.html', data=pred)
+       
+    
+    except Exception as e:
+        # Ocurrió un error desconocido
+         return render_template('error.html', data={e})
 
 
 if __name__ == "__main__":

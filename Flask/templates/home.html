@@ -5,7 +5,7 @@
 
         <h1> CERVICAL CANCER DETECTION </h1><br>
         
-        <form method="POST", action="{{url_for('home')}}" name="subida-imagenes" enctype="multipart/formdata" >
+        <form method="POST", action="{{url_for('home')}}" name="subida-imagenes" enctype="multipart/form-data" >
             <input type="file" name="imagen" />
             <input type="submit" , value='predict!' >
         </form>
