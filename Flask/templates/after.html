@@ -8,12 +8,11 @@
     <center>
 
     <h1>  PREDICTION :  </h1>
-  
-
+    <center><p>{{data[0][0]}}</p></center>
     {%if data[0][0] > 0.5%}
-    <h1>Celula-Atipica</h1>  
+      <h1>Celula-Atipica</h1>  
     {%else%}
-    <h1>Celula-Normal</h1>
+      <h1>Celula-Normal</h1>
     {%endif%}    
     <img src="static/{{imagen}}">
         <br/><br/>
