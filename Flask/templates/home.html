@@ -1,18 +1,28 @@
 <html>
-    <body bgcolor=#d4a3ae>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+      </head>
+    <body>
+    <div class="contenedor-app">
 
-        <center>
+        <h1 id="titulo"> CERVICAL CANCER DETECTION </h1><br>
+        <div>
+            <img class="imagen" src="../static/rosa-imagen.jpg" alt="texto-descriptivo-de-la-imagen">
+        </div>
 
-        <h1> CERVICAL CANCER DETECTION </h1><br>
+        <p>El cáncer de cuello de útero es un problema de salud creciente y una causa importante de mortalidad en las mujeres en todo el mundo. Según la Organización Mundial de la Salud (OMS) el carcinoma cervical es el cuarto tipo de cáncer más común entre las mujeres y uno de los cánceres que mayor incidencia de mortalidad tiene</p>
+        <p>Desde que en 1928 el médico griego Papanicolaou descubrió que se podían detectar células cancerosas en frotis cervicovaginales, la citología cervicovaginal ha sido la técnica de cribado por excelencia para detectar lesiones precancerosas en células del cérvix uterino y prevenir sus consecuencias. Lo que ha supuesto hasta ahora una drástica reducción de la incidencia y mortalidad femenina de este tipo de cáncer. No obstante, es una prueba que requiere un trabajo visual y manual exhaustivo y muy repetitivo por parte del citopatólogo.</p>
+        <p> Hoy en día, el ingente volumen de muestras citológicas recibidas en los laboratorios, unido a la escasez de facultativos especializados en el sector, obligan a enfrentar la necesidad de incorporar en la práctica clínica nuevas técnicas automatizadas de diagnóstico que auxilien a los citopatólogos en la detección de células precancerosas o cancerosas, y como otras anomalías cervicales, minimizando el esfuerzo manual exhaustivo del facultativo. Es así como surge la idea de crear un algoritmo que reduzca la carga de trabajo del profesional sanitario.</p>
         
-        <form method="POST", action="{{url_for('home')}}" name="subida-imagenes" enctype="multipart/form-data" >
-            <input type="file" name="imagen" />
-            <input type="submit" , value='predict!' >
+        <h2 id="titulo-ingreso">Ingrese la imagen que desee predecir:</h2>
+
+        <form method="POST", action="{{url_for('home')}}" name="subida-imagenes" enctype="multipart/form-data"  class="formulario">
+            <input id="input-imagen" type="file" name="imagen" />
+            <input id="input-predict" type="submit" , value='predict!' >
         </form>
 
         <img src='static\celula.bmp' alt="celula">
-        
-    </center>
-
+       
+    </div>
     </body>
 </html>
