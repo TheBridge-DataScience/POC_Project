@@ -1,10 +1,10 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, send_from_directory,url_for
 import numpy as np
 from skimage.io import imread 
 from keras.layers import Conv2D, MaxPooling2D, Dropout, Flatten, Dense
 import cv2 
 from werkzeug.utils import secure_filename
-
+import os
 from keras.models import Sequential
 from tensorflow import keras
 
@@ -15,7 +15,7 @@ app = Flask(__name__)
 
 
 @app.route('/') # este es el home, con la plantilla que busca en la carpeta templates (es la pagina web ya prediseñada en biblioteca)
-def man():
+def man():   
     return render_template('home.html')
 
 
@@ -39,7 +39,7 @@ def home():
     except Exception as e:
         # Ocurrió un error desconocido
          return render_template('error.html', data={e})
-
-
+                   
 if __name__ == "__main__":
+    
     app.run(debug=True)
