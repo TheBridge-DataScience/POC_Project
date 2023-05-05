@@ -6,13 +6,13 @@
 
     <h1>  PREDICTION :  </h1>
   
-    {%if data[0][0] > 0.4%}
-    <h1>Celula-Normal</h1>  
-    <img src='static\normal.jpg'>  
+    {%if data[0][0] > 0.1%}
+    <h1>Celula-Atipica</h1>  
+    <img src='static\atipica.bmp'>  
 
     {%else%}
-    <h1>Celula-Atipica{{data}}</h1>
-    <img src='static\atipica.bmp'>
+    <h1>Celula-Normal{{data}}</h1>
+    <img src='static\normal.jpg'>
     
     {%endif%}
 
