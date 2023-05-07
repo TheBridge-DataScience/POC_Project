@@ -1,3 +1,3 @@
-print('adios')
+print('hola')
 print ('hola')
-print ('hola, buenos días')
+variable = 'saludos'
