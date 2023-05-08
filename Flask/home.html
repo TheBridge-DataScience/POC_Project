@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>CERVICAL CANCER DETECTION </title>
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    </head>
+    <body bgcolor=#d4a3ae>
+
+        <center>
+
+        <h1> CERVICAL CANCER DETECTION </h1><br>
+        
+        <form method="POST", action="{{url_for('home')}}" name="subida-imagenes" enctype="multipart/form-data" >
+            <input type="file" name="imagen" />
+            <input type="submit" , value='predict!' >
+        </form>
+
+        <img src='static\celula.bmp' alt="celula">
+        
+    </center>
+
+    </body>
+</html>
